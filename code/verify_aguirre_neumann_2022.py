@@ -5,10 +5,10 @@ Writes ../data/results.json and ../figures/fig_aguirre_neumann_2022_audit.pdf.
 
 Part A  q=2, n=19, F=x+1 and F=x^2+x (both in Upsilon_{q^n}): hypothesis of Theorem 3.2 vs exhaustive count.
 Part B  q=5, n=10, all F in Upsilon_5(2,1): exhaustive count of 2-primitive 2-normal alpha with F(alpha)
-        3-primitive 1-normal (the setting of Section 4, Theorem 4.6 of the paper).
+        3-primitive 1-normal (the setting of Section 4, Theorem 4.8 of the paper).
 Part C  exact character sum of the omitted branch (eta_1, eta_2 trivial, psi_2 nontrivial) for affine F.
-Part D  optimum of the sieve criterion (crivo) of Proposition 3.5 with M r1 r2 = 36, and with the constant 6
-        printed in procedure TotalSieve, for 5 <= q <= 400, 8 <= n <= 20 in the range of Theorem 4.6.
+Part D  optimum of the sieve criterion (crivo) of Proposition 3.4 with M r1 r2 = 36, and with the constant 6
+        printed in procedure TotalSieve, for 5 <= q <= 400, 8 <= n <= 20 in the range of Theorem 4.8.
 """
 import json, os, sys, time
 from math import gcd, log10
@@ -362,7 +362,7 @@ def monic_factor_lists(q, n):
 
 
 def best_sieve(q, n):
-    """min over all admissible (l1,l2,g1,g2) in Prop. 3.5 of W(l1)W(l2)W(g1~)W(g2~)*Delta (exact, Fractions)."""
+    """min over all admissible (l1,l2,g1,g2) in Prop. 3.4 of W(l1)W(l2)W(g1~)W(g2~)*Delta (exact, Fractions)."""
     N = q ** n - 1
     ps = primes_qn1(q, n)
     L1 = [pp for pp in ps if (N // 2) % pp == 0]
