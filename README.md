@@ -75,6 +75,11 @@ pdflatex aguirre_neumann_primitive_normal_pairs_audit.tex
 Ruqing Chen, *A note on the existence of pairs of r-primitive and k-normal elements over finite fields*,
 November 2026. [doi:10.5281/zenodo.24313540](https://doi.org/10.5281/zenodo.24313540)
 
+## License
+
+Code (`code/`) is released under the MIT License. The paper, figure and data are released under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See [LICENSE](LICENSE).
+
 ## Contact
 
 Ruqing Chen, GUT Geoservice Inc., Montreal, Canada — ruqing@hotmail.com
