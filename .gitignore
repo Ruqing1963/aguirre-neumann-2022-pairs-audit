@@ -1,0 +1,32 @@
+# LaTeX build products
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local copy of the arXiv source of the audited paper (third-party material;
+# fetch it from https://arxiv.org/abs/2210.11504 instead)
+src/
+
+# Working notes and previews
+ai_studio_code.txt
+preview*.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
